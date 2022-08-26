@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       >
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <LinearLayout
+            android:id="@+id/layoutvoti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp"
+            >
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+              >
+
+               <TextView
+                   android:id="@+id/ruolovoto"
+                   android:layout_width="18dp"
+                   android:layout_height="match_parent"
+                   android:text="C"
+                   android:gravity="center"
+                   android:textColor="@color/white"
+                   android:background="@drawable/blu_circle"
+                   android:textStyle="bold"
+                   android:textSize="10sp"/>
+
+
+             <TextView
+                 android:id="@+id/nomevoto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".5"
+                android:textStyle="bold"
+                android:text="Milinkovic-Savic"
+                android:gravity="start"
+                 android:textColor="@color/blacksoft"
+                android:paddingStart="10dp"
+                 android:paddingEnd="5dp"
+                android:textSize="12sp"/>
+
+               <TextView
+                   android:id="@+id/voto"
+                   android:layout_width="0dp"
+                   android:layout_height="match_parent"
+                   android:layout_weight=".1"
+                   android:text="6"
+                   android:gravity="center"
+                   android:textColor="@color/bluchiaro"
+                   android:background="@color/grey"
+                   android:textStyle="bold"
+                   android:textSize="13sp"/>
+
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:layout_width="18dp"
+                    android:layout_height="match_parent"
+              />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    android:layout_weight=".5"
+                    android:orientation="horizontal">
+
+                   <ImageView
+                       android:id="@+id/bonus1"
+                       android:padding="2dp"
+                       android:layout_marginStart="10dp"
+                       android:layout_width="20dp"
+                       android:layout_height="20dp"/>
+
+                    <ImageView
+                        android:id="@+id/bonus2"
+                        android:layout_width="20dp"
+                        android:padding="2dp"
+                        android:layout_height="20dp"/>
+                    <ImageView
+                        android:id="@+id/bonus3"
+                        android:padding="2dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <ImageView
+                        android:id="@+id/bonus4"
+                        android:padding="2dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <ImageView
+                        android:id="@+id/bonus5"
+                        android:padding="2dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <ImageView
+                        android:id="@+id/bonus6"
+                        android:padding="2dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <ImageView
+                        android:id="@+id/bonus7"
+                        android:padding="2dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <ImageView
+                        android:id="@+id/bonus8"
+                        android:padding="2dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <ImageView
+                        android:id="@+id/bonus9"
+                        android:padding="2dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+                    <ImageView
+                        android:id="@+id/bonus10"
+                         android:padding="2dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"/>
+
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/fantavoto"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:text="6"
+                    android:gravity="center"
+                    android:textColor="@color/blu"
+                    android:background="@color/grey"
+                    android:textStyle="bold"
+                    android:textSize="13sp"/>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

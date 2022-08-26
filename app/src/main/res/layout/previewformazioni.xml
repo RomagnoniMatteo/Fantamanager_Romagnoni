@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+                <LinearLayout
+                    android:id="@+id/moduloprevcasa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/fantasyGreenLight"
+                    android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:padding="10dp" >
+
+                            <!-- Spinner? -->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:text="Astor Villa"
+                                android:gravity="center"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:background="@color/teal_700"
+                                />
+                        </LinearLayout>
+                         <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:padding="10dp" >
+
+                        <!-- Spinner? -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="3-5-2"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:background="@color/teal_700"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+              <LinearLayout
+                  android:id="@+id/formazionecasa"
+                  android:paddingBottom="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="500dp"
+                  android:orientation="vertical"
+                  android:background="@color/fantasyGreenDark">
+
+                 <androidx.recyclerview.widget.RecyclerView
+                     android:padding="10dp"
+                     android:layout_gravity="center"
+                     android:paddingStart="10dp"
+                     android:paddingEnd="10dp"
+                     android:id="@+id/portierecasa"
+                     android:layout_width="wrap_content"
+                     android:layout_height="0dp"
+                     android:layout_weight=".15"/>
+
+                  <androidx.recyclerview.widget.RecyclerView
+                      android:layout_gravity="center"
+                      android:paddingStart="10dp"
+                      android:paddingEnd="10dp"
+                      android:padding="10dp"
+                      android:id="@+id/difensoricasa"
+                      android:layout_width="wrap_content"
+                      android:layout_height="0dp"
+                      android:layout_weight=".15"/>
+
+                  <androidx.recyclerview.widget.RecyclerView
+                      android:padding="10dp"
+                      android:layout_gravity="center"
+                      android:paddingStart="10dp"
+                      android:paddingEnd="10dp"
+                      android:id="@+id/centrocasa"
+                      android:layout_width="wrap_content"
+                      android:layout_height="0dp"
+                      android:layout_weight=".15"/>
+
+                  <androidx.recyclerview.widget.RecyclerView
+                      android:padding="10dp"
+                      android:layout_gravity="center"
+                      android:paddingStart="10dp"
+                      android:paddingEnd="10dp"
+                      android:id="@+id/attcasa"
+                      android:layout_width="wrap_content"
+                      android:layout_height="0dp"
+                      android:layout_weight=".15"/>
+
+
+
+              </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"/>
+
+        <LinearLayout
+            android:id="@+id/formazioneospite"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical"
+            android:background="@color/fantasyGreenDark">
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:id="@+id/attosp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".15"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:id="@+id/centroosp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".15"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:padding="10dp"
+                android:id="@+id/difensoriosp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".15"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:id="@+id/portiereosp"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight=".15"/>
+
+
+
+        </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:id="@+id/moduloprevospite"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/fantasyGreenLight"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:padding="10dp" >
+
+                        <!-- Spinner? -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="Astor Villa"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:background="@color/teal_700"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:padding="10dp" >
+
+                        <!-- Spinner? -->
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:text="4-4-2"
+                            android:gravity="center"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/white"
+                            android:background="@color/teal_700"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".20"
+                android:background="@color/teal_700"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:text="A DISPOSIZIONE:"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginBottom="50dp"
+            android:id="@+id/panchinateam"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+
+            <LinearLayout
+                android:id="@+id/panchinacasaprev"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/teal_700"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="Astor Villa"
+                            android:textColor="@color/white"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvpanchinacasa"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/panchinaospprev"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+               <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/teal_700"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight=".1"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:text="Troppo Cristante"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvpanchinaosp"
+                    android:padding="5dp"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

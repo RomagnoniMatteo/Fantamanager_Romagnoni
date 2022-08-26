@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+    android:id="@+id/group1"
+    android:checkableBehavior="single">
+        <item
+            android:title="LISTONE">
+        <menu>
+            <item
+                android:id="@+id/svincolati"
+                android:icon="@drawable/ic_baseline_sports_soccer_24"
+                android:title="Svincolati"
+                android:checked="true" />
+            <item
+                android:id="@+id/svincolatiu21"
+                android:icon="@drawable/ic_baseline_sports_soccer_24"
+                android:title="Svincolati U23"/>
+
+        </menu>
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/group2"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/subtitle"
+            android:title="ADMIN">
+            <menu>
+                <item
+                    android:id="@+id/creacompetizione"
+                    android:icon="@drawable/ic_baseline_catching_pokemon_24"
+                    android:title="Crea competizione" />
+
+                <item
+                    android:id="@+id/apricalciomercato"
+                    android:icon="@drawable/ic_baseline_door_sliding_24"
+                    android:title="Apri il calciomercato" />
+
+                <item
+                    android:id="@+id/assegnagiocatori"
+                    android:icon="@drawable/ic_baseline_card_giftcard_24"
+                    android:title="Assegna giocatori" />
+
+
+                <item
+                    android:id="@+id/newadmin"
+                    android:icon="@drawable/ic_baseline_card_giftcard_24"
+                    android:title="Fai altro admin" />
+
+
+            </menu>
+        </item>
+    </group>
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:title="IMPOSTAZIONI LEGA">
+            <menu>
+                <item
+                    android:id="@+id/regolamento"
+                    android:icon="@drawable/ic_baseline_menu_book_24"
+                    android:title="Regolamento lega" />
+
+                <item
+                    android:id="@+id/quit"
+                    android:icon="@drawable/ic_baseline_sentiment_very_dissatisfied_24"
+                    android:title="Esci dalla lega" />
+
+            </menu>
+        </item>
+    </group>
+
+</menu>

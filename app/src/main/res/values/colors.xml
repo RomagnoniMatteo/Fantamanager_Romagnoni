@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="teal_900">#03A9F4</color>
+    <color name="teal_901">#20779A</color>
+    <color name="teal_902">#E620779A</color>
+    <color name="blu">#001563</color>
+    <color name="bluchiaro">#1A3BB5</color>
+    <color name="black">#FF000000</color>
+    <color name="blacksoft">#BE000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="whitesoft">#9F9F9F</color>
+    <color name="red">#670000</color>
+    <color name="gold">#854F00</color>
+    <color name="yelloww">#CDDC39</color>
+    <color name="yellowsoft">#CAD563</color>
+    <color name="yellowmed">#A9FFEB3B</color>
+    <color name="yellowg">#709811</color>
+    <color name="grey">#AAB199</color>
+    
+    
+    <color name="svincolati">#6124B1</color>
+    <color name="svincolatiu21">#13B2C3</color>
+
+
+    <item name="fantasyGreen" type="color">#4C9966</item>
+    <item name="fantasyGreenDark" type="color">#0F5B29</item>
+    <item name="fantasyGreenDarksoft" type="color">#004217</item>
+    <item name="fantasyGreenDarkest" type="color">#00240C</item>
+    <item name="fantasyGreenLight" type="color">#77B68C</item>
+    <item name="fantasyGreenLightest" type="color">#A9D4B8</item>
+
+    <item name="footballField" type="color">#6AAC4B</item>
+</resources>

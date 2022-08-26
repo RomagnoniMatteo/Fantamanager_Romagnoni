@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Impostazioni">
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blu"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+
+                <ImageView
+                        android:layout_margin="10dp"
+                        android:id="@+id/view2"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:background="@drawable/round_back_purple"
+                        android:src="@drawable/fantagoat_real"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="22sp"
+                    android:textColor="@color/white"
+                    android:text="Astor Villa"
+                    android:textStyle="bold"
+                    />
+
+                <!--listone -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/round_back_white"
+                    android:padding="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="40dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:text="LISTONI"
+                        android:layout_marginBottom="20dp"
+                        android:textStyle="bold"
+                        />
+
+                    <!-- listone svincolati -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:id="@+id/iconasvincolati"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="5dp"
+                            android:background="@drawable/round_back_purple"
+                            android:src="@drawable/icons8soccerball100" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_toEndOf="@+id/iconasvincolati"
+                            android:text="Listone Svincolati"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/svincolatibut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/ic_arrow_right" />
+
+                    </RelativeLayout>
+
+                    <!-- listone svincolatiu21 -->
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="5dp"
+                            android:id="@+id/iconasvincolatiu21"
+                            android:background="@drawable/round_back_purple"
+                            android:src="@drawable/icons8soccerball100"/>
+
+                        <TextView
+                            android:layout_marginStart="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Listone Svincolati U21"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_toEndOf="@+id/iconasvincolatiu21"/>
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/svincolatiu21but"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow_right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+                <!--admin -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/round_back_white"
+                    android:padding="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:text="ADMIN"
+                        android:layout_marginBottom="20dp"
+                        android:textStyle="bold"
+                        />
+                    <!-- crea competizione -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:id="@+id/iconeadmin"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/round_back_purple"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_catching_pokemon_24"
+                            app:tint="@color/bluchiaro" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_toEndOf="@+id/iconeadmin"
+                            android:text="Crea Competizione"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/creacompetizionebut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow_right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                    <!-- apri calciomercato -->
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:id="@+id/iconatransfer"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="5dp"
+                            android:background="@drawable/round_back_purple"
+                            android:src="@drawable/ic_baseline_change_circle_24" />
+
+                        <TextView
+                            android:layout_marginStart="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Apri il Calciomercato"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_toEndOf="@+id/iconatransfer"/>
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/apricalciomercatobut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow_right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                    <!-- assegna giocatori -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/iconassegnagioc"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/round_back_purple"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_card_giftcard_24"
+                            app:tint="@color/blu"/>
+
+                        <TextView
+                            android:layout_marginStart="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Assegna giocatori"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_toEndOf="@+id/iconassegnagioc"/>
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/assegnagiocatoribut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow_right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                    <!-- fai altro admin -->
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/iconanewadmin"
+                            android:background="@drawable/round_back_purple"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_card_giftcard_24"
+                            app:tint="@color/blu"/>
+
+                        <TextView
+                            android:layout_marginStart="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Nuovo Admin"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_toEndOf="@+id/iconanewadmin"/>
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/newadminbut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow_right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+                <!--impostazioni generali -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/round_back_white"
+                    android:padding="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="40dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:text="IMPOSTAZIONI GENERALI"
+                        android:layout_marginBottom="20dp"
+                        android:textStyle="bold"
+                        />
+                    <!-- notifiche -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="12dp"
+                            android:id="@+id/iconenot"
+                            android:background="@drawable/round_back_purple"
+                            android:src="@drawable/icons8soccerball100"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_toEndOf="@+id/iconenot"
+                            android:text="Notifiche"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                    <!-- musica -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="12dp"
+                            android:id="@+id/iconmus"
+                            android:background="@drawable/round_back_purple"
+                            android:src="@drawable/icons8soccerball100"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="20dp"
+                            android:layout_toEndOf="@+id/iconmus"
+                            android:text="Musica"
+                            android:textColor="@color/white"
+                            android:textStyle="bold" />
+
+                        <androidx.appcompat.widget.SwitchCompat
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                    <!-- assistenza -->
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="12dp"
+                            android:id="@+id/iconassistenza"
+                            android:background="@drawable/round_back_purple"
+                            android:src="@drawable/icons8soccerball100"/>
+
+                        <TextView
+                            android:layout_marginStart="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Assistenza"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_toEndOf="@+id/iconassistenza"/>
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/assistenzabut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow_right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                    <!-- chi siamo -->
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="12dp"
+                            android:id="@+id/iconachisiamo"
+                            android:background="@drawable/round_back_purple"
+                            android:src="@drawable/icons8soccerball100"/>
+
+                        <TextView
+                            android:layout_marginStart="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Chi siamo?"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_toEndOf="@+id/iconachisiamo"/>
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/chisiamobut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow_right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+                <!--impostazioni lega -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/round_back_white"
+                    android:padding="15dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="100dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"
+                        android:text="INFO LEGA"
+                        android:layout_marginBottom="20dp"
+                        android:textStyle="bold"
+                        />
+
+                    <!-- REGOLAMENTO -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:id="@+id/iconareg"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/round_back_purple"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_menu_book_24"
+                            app:tint="@color/blu"/>
+
+                        <TextView
+                            android:layout_marginStart="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Regolamento Lega"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_toEndOf="@+id/iconareg"/>
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/regolamentobut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow_right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+                    <!-- Esci dalla lega -->
+                    <RelativeLayout
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <ImageView
+                            android:id="@+id/quitlega"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/round_back_purple"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_chevron_right_24" />
+
+                        <TextView
+                            android:layout_marginStart="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="Esci dalla lega"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_toEndOf="@+id/quitlega"/>
+
+                        <ImageButton
+                            android:background="@android:color/transparent"
+                            android:id="@+id/quitlegabut"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_arrow_right"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"/>
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_navigation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

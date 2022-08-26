@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/yellow_bg"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".50"
+        android:gravity="center"
+        android:text="Proponi scambio a :"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:background="@color/teal_700"
+        android:textColor="@color/white"
+        />
+
+        <Spinner
+            android:padding="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+
+
+            <LinearLayout
+                android:id="@+id/scambiut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Astor Villa"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:background="@color/teal_700"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/giocatoriutente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/yellowsoft"
+                    android:padding="10dp"
+                    >
+                    <Button
+                        android:id="@+id/addscambiouser"
+                        android:backgroundTint="@color/bluchiaro"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="AGGIUNGI GIOCATORE"
+                        android:textColor="@color/white"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_marginStart="50dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:padding="10dp"
+                    android:background="@color/yellowsoft"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/teal_700"
+                        android:drawableEnd="@drawable/ic_baseline_euro_24"
+                        android:gravity="center"
+                        android:text="AGGIUNGI CASH"
+                        android:textColor="@color/white" />
+
+                    <EditText
+                        android:padding="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/white"
+                        android:textColor="@color/black"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:textSize="20sp"/>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:padding="10dp"
+            android:id="@+id/scambiavv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Troppo Cristante"
+                android:padding="10dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@color/teal_700"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/giocatoriavv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+
+                />
+
+
+            <LinearLayout
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="10dp"
+                android:background="@color/yellowsoft"
+
+                >
+                <Button
+                    android:id="@+id/addscambioriv"
+                    android:backgroundTint="@color/bluchiaro"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="AGGIUNGI GIOCATORE"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:background="@color/yellowsoft"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/teal_700"
+                    android:drawableEnd="@drawable/ic_baseline_euro_24"
+                    android:gravity="center"
+                    android:text="AGGIUNGI CASH"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:inputType="number"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INVIA SCAMBIO"
+            android:background="@drawable/button_bg"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

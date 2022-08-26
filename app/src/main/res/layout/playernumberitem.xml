@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layoutrosa"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/ruolorosa"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".10"
+            android:gravity="center"
+            android:text="C"
+            android:textColor="@color/gold"
+            android:textSize="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/listDivider" />
+
+        <ImageView
+            android:id="@+id/imagerosa"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".10"
+            android:src="@drawable/aston_villa_emblem"
+            />
+
+        <View
+            android:id="@+id/divider10"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/nomerosa"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".20"
+            android:gravity="center"
+            android:text="Degli Innocenti"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+
+        <View
+            android:id="@+id/divider11"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/nmagliarosa"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".10"
+            android:gravity="center"
+            android:text="77"
+            android:textSize="18sp"
+            android:editable="false"
+            android:inputType="none"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+
+        <ImageButton
+            android:id="@+id/editnumber"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:foregroundGravity="left"
+            android:layout_weight=".05"
+            android:src="@drawable/ic_baseline_mode_edit_24"
+            android:background="#00FF0000"
+            app:tint="@color/gold" />
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+
+</LinearLayout>
+

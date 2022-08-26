@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:id="@+id/constraint"
+    tools:context=".Activity.Calendario">
+
+
+  <LinearLayout
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintBottom_toBottomOf="parent"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="?actionBarSize"
+        android:padding="@dimen/appbar_padding"
+        android:text="Calendario "
+        android:background="@color/teal_700"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+
+
+     <com.applandeo.materialcalendarview.CalendarView
+         android:id="@+id/calendarView"
+         android:layout_width="match_parent"
+         app:type="one_day_picker"
+         app:eventsEnabled="true"
+         android:layout_height="wrap_content" />
+
+      <androidx.viewpager.widget.ViewPager
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/constraint"
+
+        app:menu="@menu/bottom_navigation" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.matteoromagnoni.fantamanager">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Fantamanager">
+
+        <activity
+            android:name=".InsideSettings.admin.CreaCompetizione.CreaCompetizioneFragment"
+            android:parentActivityName=".Activity.Impostazioni"
+            android:exported="false" />
+        <activity
+            android:name=".InsideSettings.RegolamentoLegaFragment"
+            android:parentActivityName=".Activity.Impostazioni"
+            android:exported="false" />
+        <activity
+            android:name=".InsideSettings.admin.ApriCalciomercatoFragment"
+            android:parentActivityName=".Activity.Impostazioni"
+            android:exported="false"/>
+        <activity
+            android:name=".InsideSettings.admin.AssegnaGiocatoriFragment"
+            android:parentActivityName=".Activity.Impostazioni"
+            android:exported="false" />
+        <activity
+            android:name=".InsideSettings.admin.FaiAltroAdminFragment"
+            android:parentActivityName=".Activity.Impostazioni"
+            android:exported="false"/>
+        <activity
+            android:name=".InsideSettings.SvincolatiFragment"
+            android:parentActivityName=".Activity.Impostazioni"
+            android:exported="false" />
+        <activity
+            android:name=".InsideSettings.SvincolatiU21Fragment"
+            android:parentActivityName=".Activity.Impostazioni"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.Impostazioni"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.SulMercato"
+            android:exported="false"
+            android:theme="@style/Theme.Fantamanager.NoActionBar" />
+        <activity
+            android:name=".LoginSignUp.Login"
+            android:exported="false"
+            android:theme="@style/Theme.Fantamanager.NoActionBar" />
+        <activity
+            android:name=".Activity.MatchInCorso"
+            android:exported="false"
+            android:theme="@style/Theme.Fantamanager.NoActionBar" />
+        <activity
+            android:name=".Activity.DraftU23"
+            android:exported="false"
+            android:theme="@style/Theme.Fantamanager.NoActionBar" />
+        <activity
+            android:name=".mercatoanimation.Chiusuramercato"
+            android:exported="false"
+            android:theme="@style/Theme.Fantamanager.NoActionBar" />
+        <activity
+            android:name=".mercatoanimation.aperturamercato"
+            android:exported="false"
+            android:theme="@style/Theme.Fantamanager.NoActionBar" />
+        <activity
+            android:name=".Activity.Calciomercato"
+            android:exported="false"
+            android:theme="@style/Theme.Fantamanager.NoActionBar" />
+        <activity
+            android:name=".Activity.Lega"
+            android:exported="false"
+            android:theme="@style/Theme.Fantamanager.NoActionBar" />
+        <activity
+            android:name=".Activity.Club"
+            android:exported="false"
+            android:theme="@style/Theme.Fantamanager.NoActionBar" />
+        <activity
+            android:name=".ImageEditor.ImageEditor"
+            android:exported="false"
+            android:label="Modifica Divisa"
+            android:theme="@style/Theme.Fantamanager.NoActionBar" />
+        <activity
+            android:name=".Activity.Scambi"
+            android:exported="false"
+            android:theme="@style/Theme.Fantamanager.NoActionBar" />
+        <activity
+            android:name=".Activity.Finanze"
+            android:exported="false"
+            android:theme="@style/Theme.Fantamanager.NoActionBar" />
+        <activity
+            android:name=".Activity.Classifica"
+            android:exported="false"
+            android:theme="@style/Theme.Fantamanager.NoActionBar" />
+        <activity
+            android:name=".Activity.Calendario"
+            android:exported="false"
+            android:theme="@style/Theme.Fantamanager.NoActionBar" />
+        <activity
+            android:name=".Activity.CalendarDetailed"
+            android:exported="false"
+            android:theme="@style/Theme.Fantamanager.NoActionBar" />
+        <activity
+            android:name=".Activity.Vivaio"
+            android:exported="false"
+            android:theme="@style/Theme.Fantamanager.NoActionBar" />
+        <activity
+            android:name=".Activity.Home"
+            android:exported="false"
+            android:theme="@style/Theme.Fantamanager.NoActionBar" />
+        <activity
+            android:name=".formazione.Formazione"
+            android:exported="false"
+            android:label="Inserisci i titolari" />
+        <activity
+            android:name=".Activity.SplashScreen"
+            android:exported="true"
+            android:theme="@style/Theme.Fantamanager.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- PHOTO EDITOR -->
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorStickerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorTextActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorCropActivity"
+            android:screenOrientation="fullSensor"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.dsphotoeditor.sdk.activity.DsPhotoEditorDrawActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+    </application>
+
+</manifest>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/leghe"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_weight=".90"
+            android:background="@drawable/yellow_bg"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".7"
+                >
+
+                <ImageView
+                    android:id="@+id/logolega"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"
+                    android:src="@drawable/aston_villa_emblem"/>
+
+
+
+
+
+
+
+                <TextView
+                    android:id="@+id/nomelega"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".3"
+                    android:gravity="center"
+                    android:text="Fanta mega sgravato"
+                    android:textColor="@color/blacksoft"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".5"
+                    android:orientation="vertical"
+                    >
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight=".35">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="10dp"
+                            android:layout_weight=".4">
+
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight=".6"
+                                android:text="N partecipanti:"
+                                android:gravity="center"
+                                android:textSize="15sp"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:id="@+id/npartattuali"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="10"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:textColor="@color/black"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text=" / "
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:textColor="@color/black"/>
+
+                            <TextView
+                                android:id="@+id/npartecipantilega"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="12"
+                                android:textStyle="bold"
+                                android:gravity="center"
+                                android:textSize="18sp"
+                                android:textColor="@color/black"/>
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:orientation="vertical"
+                        android:layout_weight=".35">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight=".4">
+
+                            <EditText
+                                android:id="@+id/legapass"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:hint="Password di lega"
+                                android:gravity="center"
+                                android:inputType="textPassword"/>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".3">
+
+                <Button
+                    android:id="@+id/partecipalega"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Partecipa"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white" />
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

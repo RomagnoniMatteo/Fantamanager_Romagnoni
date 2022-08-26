@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/edit_text_bg"
+        android:backgroundTint="@color/white"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/ruolosearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".10"
+            android:gravity="center"
+            android:text="C"
+            android:textStyle="bold"
+            android:textColor="@color/gold"
+            android:textSize="20sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+        <ImageView
+            android:id="@+id/logosearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".1"
+            android:gravity="center"
+            android:src="@drawable/aston_villa_emblem"
+            />
+
+
+        <TextView
+            android:id="@+id/teamsearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".20"
+            android:gravity="center"
+            android:text="Empoli"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            />
+
+
+        <TextView
+            android:id="@+id/nomesearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".20"
+            android:gravity="center"
+            android:text="Degli Innocenti"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+
+            />
+
+
+
+        <TextView
+            android:id="@+id/annosearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".10"
+            android:gravity="center"
+            android:text="2001"
+            android:textSize="18sp"
+
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+
+</LinearLayout>
+
